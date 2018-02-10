@@ -1,3 +1,5 @@
 <h1>Welcome <%= current_user.name%></h1>
 <br>
+<%= link_to "Setting" , edit_user_registration_path,method: :get%>
+<br>
 <%= link_to "LogOut" , destroy_user_session_path,method: :delete%>
