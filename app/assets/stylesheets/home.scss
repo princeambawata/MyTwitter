@@ -1,3 +1,178 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+nav.sign-navbar{
+ display:flex;
+ align-items:center;
+ position:fixed;
+ width:100%;
+ top:0;
+ height:60px;
+ background-color:#1da1f2;
+ border-color:#1da1f2;
+ box-shadow: 1px 1px 6px;
+ z-index:10;
+ }
+
+ #inside-nav{
+ display: flex;
+ justify-content: space-between;
+ width:92%;
+ margin-left: 4%;
+ }
+
+ #inside-search input{
+ width:139%;
+ font-family: inherit;
+ padding-left:8px;
+ padding-right:8px;
+ margin-left:16%;
+ height:32px;
+ border:1px;
+ border-radius:7px;
+ border-color:#007bff;
+ }
+ #nav-mid-inside{
+ width:26%;
+ display: flex;
+ justify-content:space-between;
+ }
+ #search-icon-inside i{
+  margin-left:160%;
+  margin-top:3px;
+  font-size:23px;
+ }
+
+ // main home css
+
+#home{
+    padding-top:73px;
+    padding-left:4%;
+    width: 96%;
+    height: 100%;
+    display:flex;
+    
+}
+
+#home-left{
+    display: flex;
+    flex-direction: column;
+    width:24%;
+    margin-right:1%;
+}
+#upper-left{
+    height:200px;
+    margin-bottom: 13px;
+    background-color:white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+#lower-left{
+    height:376px;
+    background-color:white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+#home-mid{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    background-color:white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+#upper-mid{
+    background-color:white;
+}
+#lower-mid{
+    
+    background-color:white;
+}
+#lower-mid img{
+    margin-left:1.5%;
+    width:97%;
+    height:450px;
+}
+#home-right{
+    display: flex;
+    flex-direction: column;
+    width:24%;
+    margin-left:1%;
+}
+#upper-right{
+    height:300px;
+    margin-bottom: 13px;
+    background-color:white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+#lower-right{
+    height:130px;
+    background-color:white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+#upload-form{
+    display:flex;
+    height:100px;
+    width:100%;
+    padding-top:14px;
+    background-color:#eaf6fc;
+    height:150px;
+}
+#left-upload{
+    margin-left:10px;
+}
+#left-upload .fa-2x{
+    color:#1da1f2;
+}
+#right-upload{
+    margin-left: 6px;
+    display:flex;
+    flex-direction: column;
+    width:90%;
+}
+#tweet_tweet{
+    width:100%;
+    padding-left: 8px;
+    padding-top: 8px;
+    height:85px;
+    border: 2px solid #a9dcf7;
+    border-radius: 4px;
+}
+#image-tag{
+    display:flex;
+    justify-content: space-between;
+}
+#submit input{
+    margin-top:2px;
+    margin-right:4px;
+    width:80px;
+    height:33px;
+    background-color:#1da1f2;
+    color:white;
+    border:2px;
+    border-radius:25px;
+}
+.upload-btn-wrapper{
+    display: flex;
+}
+
+.upload-btn {
+    margin-top:2px;
+    margin-left:4px;
+    padding-top:5px;
+    width:107px;
+    height:33px;
+    background-color:#1da1f2;
+    color:white;
+    border:2px;
+    border-radius:35px;
+    text-align:center;
+}
+#file-input input[type=file]{
+    margin-top:2px;
+    margin-left:-108px;
+    opacity:0;
+    width:107px;
+    height:33px;
+    background-color:#1da1f2;
+}

@@ -14,5 +14,12 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery.remotipart
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    // $("#tweet_tweet").click(function(event){
+    //   event.preventDefault();
+    // });
+});

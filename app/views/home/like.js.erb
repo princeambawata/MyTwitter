@@ -1,0 +1,5 @@
+if($('#tweet_'+<%= @tweet_id %>).text()==='like'){
+	$('#tweet_'+<%= @tweet_id %>).text('liked');
+}else{
+	$('#tweet_'+<%= @tweet_id %>).text('like');
+}

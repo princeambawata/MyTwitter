@@ -1,0 +1,10 @@
+<%= tweet.tweet%><br>
+<%if tweet.image.present?%>
+<%= image_tag tweet.image_url(:main).to_s %><br>
+<%end%> 
+<% if tweet.likes.where(user_id: current_user.id).length > 0%>
+    <%= link_to "liked" , url_for(controller: :home,action: :like, tweet_id: tweet.id),method: :post,id: "tweet_#{tweet.id}",remote: true %>
+<%else%>
+ <%= link_to "like" , url_for(controller: :home,action: :like, tweet_id: tweet.id),method: :post,id: "tweet_#{tweet.id}",remote: true %>
+<%end%>
+<br>

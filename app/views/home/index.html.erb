@@ -1,5 +1,38 @@
-<h1>Welcome <%= current_user.name%></h1>
-<br>
-<%= link_to "Setting" , edit_user_registration_path,method: :get%>
-<br>
-<%= link_to "LogOut" , destroy_user_session_path,method: :delete%>
+<body>
+<div id = "home">
+  <div id = "home-left">
+     <div id="upper-left"></div>
+     <div id="lower-left"></div>
+  </div>
+  <div id="home-mid">
+  	<div id="upper-mid">
+      <%= form_for Tweet.new , url: 'tweet' ,:html => {:multipart => true},remote: true do |f| %>
+      <div id= "upload-form">
+        <div id="left-upload">
+            <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+        </div>
+        <div id="right-upload">
+          <div><%= f.text_area :tweet%></div>
+          <div id="image-tag">  
+              <div class="upload-btn-wrapper">   
+                <div class="upload-btn">Add Image</div>
+                <div id="file-input"><%= f.file_field :image ,accept: 'image/png,image/gif,image/jpeg'%></div>
+              </div>
+            <div id = "submit"><%= f.submit "Tweet"%></div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  	<div id="lower-mid">
+      <% @tweets.each do |tweet|%>
+        <%= render 'tweet' , :tweet => tweet %>
+      <%end%>
+    </div>
+  </div>
+  <div id="home-right">
+  	<div id="upper-right"></div>
+  	<div id="lower-right"></div>
+  </div>
+</div>
+</body>
